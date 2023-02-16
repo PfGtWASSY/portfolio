@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import profile from './images/sunset.jpeg';
+import calorieConsumptionCalculator from './images/calorie-consumption-calculator.jpeg';
+import portfolio from './images/portfolio.jpeg';
+
 
 const App = () => {
   
@@ -140,7 +143,7 @@ const App = () => {
             <div className='products'>
 
               <figure className='product-item'>
-                <img className='product-image' src='' alt='' />
+                <img className='product-image' src={portfolio} alt='' />
                 <figcaption className='product-caption'>
                   <p className='product-caption-title'><a className='url-link' href=''>ポートフォリオ</a></p>
                   <p className='product-caption-explanation'>自分のポートフォリオです。</p>
@@ -149,7 +152,7 @@ const App = () => {
               </figure>
 
               <figure className='product-item'>
-                <img className='product-image' src='' alt='' />
+                <img className='product-image' src={calorieConsumptionCalculator} alt='' />
                 <figcaption className='product-caption'>
                   <p className='product-caption-title'><a className='url-link' href=''>筋トレ消費カロリー計算アプリ</a></p>
                   <p className='product-caption-explanation'>筋トレと時間と体重を入力すれば、消費したカロリーを計算します。</p>

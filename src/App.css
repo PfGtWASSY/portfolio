@@ -57,8 +57,6 @@ img {
   border-style: none;
 }
 
-
-
 .pc-only {
   display: block;
 }
@@ -155,6 +153,7 @@ img {
   letter-spacing: .05em;
   color: #333;
 }
+
 .gnav-item a:after {
   position: absolute;
   bottom: 0;
@@ -182,7 +181,7 @@ img {
   height: 85vh;
   text-align: center;
   color: #fff;
-  background-image: url(./images/piano_guitar2.jpeg);
+  background-image: url(./images/piano_guitar.jpeg);
   background-size: cover;
 }
 
@@ -196,18 +195,16 @@ img {
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: .1em;
+  text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
 }
+
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
-}
-
-.mv-text {
-  font-size: 16px;
-  line-height: 1.8;
+  text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
 }
 
 /*--------------------------------
@@ -219,15 +216,18 @@ img {
   margin: 0 auto;
   background-color: #e0ffff;
 }
+
 .profile-img {
   width: 20%;
   margin-right: 30px;
   border-radius: 50%;
 }
+
 .profile-img img {
   border-radius: 50%;
   aspect-ratio: 1;
 }
+
 .profile-body {
   flex: 1;
 }
@@ -262,19 +262,10 @@ img {
 }
 
 /*--------------------------------
- products
+ Products
 ---------------------------------*/
 .products {
   background-color: #fffacd;
-}
-
-.product-item {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  width: 500px;
-  margin-bottom: 50px;
-  color: #333;
 }
 
 .products-item:hover {
@@ -286,6 +277,7 @@ img {
 }
 
 .products-image img {
+  width: 500px;
   border: 1px solid #e6e6e6;
 }
 
@@ -350,9 +342,19 @@ img {
   color: #fff;
 }
 
-/*media Queries 767
+/*media Queries 501~1000
 ----------------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
+  /*  メインビジュアル */
+  .mv {
+    height: 75vh;
+    background-image: url(./images/piano_guitar_tablet.jpeg);
+  }
+}
+
+/*media Queries 500
+----------------------------------------------------*/
+@media screen and (max-width: 500px) {
   body {
     font-size: 14px;
   }
@@ -415,6 +417,7 @@ img {
   /*  メインビジュアル */
   .mv {
     height: 75vh;
+    background-image: url(./images/piano_guitar_sp.jpeg);
   }
 
   .mv-container {
@@ -424,20 +427,17 @@ img {
   .mv-title {
     font-size: 30px;
   }
+
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-
-  .mv-text {
-    font-size: 14px;
-    line-height: 1.7;
   }
 
   /* Profile */
   .profile {
     display: block;
   }
+  
   .profile-img {
     width: 150px;
     margin: 0 auto;
@@ -451,6 +451,11 @@ img {
 
   .profile-body p:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  /* Products */
+  .products-image img {
+    width: 300px;
   }
 
   /* Skill */
@@ -475,25 +480,6 @@ img {
   .skill-text {
     font-size: 13px;
     line-height: 1.7;
-  }
-
-  /* Products */
-  .products-name {
-    font-size: 12px;
-  }
-
-  .products-info {
-    margin-top: 3px;
-  }
-
-  .products-list {
-    justify-content: space-between;
-  }
-
-  .products-item {
-    flex: 0 0 48%;
-    margin-right: 0;
-    margin-bottom: 30px;
   }
 
   /* フッター */
