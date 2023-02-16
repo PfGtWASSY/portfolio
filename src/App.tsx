@@ -4,7 +4,6 @@ import profile from './images/sunset.jpeg';
 import calorieConsumptionCalculator from './images/calorie-consumption-calculator.jpeg';
 import portfolio from './images/portfolio.jpeg';
 
-
 const App = () => {
   
   return (
