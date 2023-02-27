@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d73e918e.css",
-    "main.js": "/portfolio/static/js/main.8eeaff39.js",
+    "main.css": "/portfolio/static/css/main.963d903d.css",
+    "main.js": "/portfolio/static/js/main.98be73c5.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/portfolio.jpeg": "/portfolio/static/media/portfolio.2a66d51c0e03ad26ca47.jpeg",
     "static/media/sunset.jpeg": "/portfolio/static/media/sunset.06a525a3c75f2a62803b.jpeg",
@@ -10,12 +10,12 @@
     "static/media/piano_guitar_tablet.jpeg": "/portfolio/static/media/piano_guitar_tablet.906ca767d22f43d76307.jpeg",
     "static/media/piano_guitar_sp.jpeg": "/portfolio/static/media/piano_guitar_sp.622c2a3ec22953310fdc.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.d73e918e.css.map": "/portfolio/static/css/main.d73e918e.css.map",
-    "main.8eeaff39.js.map": "/portfolio/static/js/main.8eeaff39.js.map",
+    "main.963d903d.css.map": "/portfolio/static/css/main.963d903d.css.map",
+    "main.98be73c5.js.map": "/portfolio/static/js/main.98be73c5.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73e918e.css",
-    "static/js/main.8eeaff39.js"
+    "static/css/main.963d903d.css",
+    "static/js/main.98be73c5.js"
   ]
 }
