@@ -8,7 +8,6 @@ import iconButton from './images/iconbutton.jpeg'
 const PAGE_Y_OFFSET = 200;
 
 const App = () => {
-
   const ScrollToTop = () => {
     const [show, setShow] = useState<boolean>(false)
   
