@@ -180,7 +180,7 @@ const App = () => {
               <figure className='product-item'>
                 <img className='product-image' src={portfolio} alt='' />
                 <figcaption className='product-caption'>
-                  <p className='product-caption-title'><a className='url-link' href=''>ポートフォリオ</a></p>
+                  <p className='product-caption-title'><a className='url-link' href='https://pfgtwassy.github.io/portfolio/'>ポートフォリオ</a></p>
                   <p className='product-caption-explanation'>自分のポートフォリオです。</p>
                   <p className='product-caption-tool'>Typescript/React/HTML/CSS</p>
                 </figcaption>
