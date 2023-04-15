@@ -175,13 +175,29 @@ img {
  トップへ戻るボタン
 ---------------------------------*/
 .scroll-to-top {
-  position: relative;
+  display: none;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.scroll-to-top.image {
+.scroll-to-top::before {
+  content: "";
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: #aaa4a4;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 /*--------------------------------

@@ -3,42 +3,39 @@ import profile from './images/sunset.jpeg';
 import calorieConsumptionCalculator from './images/calorie-consumption-calculator.jpeg';
 import portfolio from './images/portfolio.jpeg'
 import { useEffect, useState } from 'react'
-import iconButton from './images/iconbutton.jpeg'
 
-const PAGE_Y_OFFSET = 200;
+const PAGE_Y_OFFSET = 700;
+
+const ScrollToTop = () => {
+  const [show, setShow] = useState<boolean>(false)
+
+  const changeShow = () => {
+    if (window.pageYOffset > PAGE_Y_OFFSET) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
+  }
+
+  const onScrollTop = () => {
+    window.scroll({ top: 0, behavior: 'smooth' })
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeShow)
+    return () => window.removeEventListener('scroll', changeShow)
+  }, [])
+
+  if (show) {
+    return (
+      // ここのconsole.logは表示されたので、tsの部分は問題なさそう
+      // HTMLorCSSの問題っぽい
+      <a href="" className="scroll-to-top js-to-top" onClick={onScrollTop}>TOP</a>
+    )
+  }
+};
 
 const App = () => {
-  const ScrollToTop = () => {
-    const [show, setShow] = useState<boolean>(false)
-  
-    const changeShow = () => {
-      if (window.pageYOffset > PAGE_Y_OFFSET) {
-        setShow(true)
-      } else {
-        setShow(false)
-      }
-    }
-  
-    const onScrollTop = () => {
-      window.scroll({ top: 0, behavior: 'smooth' })
-    }
-  
-    useEffect(() => {
-      window.addEventListener('scroll', changeShow)
-      return () => window.removeEventListener('scroll', changeShow)
-    }, [])
-  
-    if (show) {
-      return (
-        <div className='scroll-to-top'>
-          <input type='image' src={iconButton} onClick={onScrollTop} />
-        </div>
-      )
-    } else {
-      return null
-    } 
-  };
-  
   return (
     <div className='wrapper'>
 
@@ -62,7 +59,7 @@ const App = () => {
       <main className='content'>
 
         {/* back to top */}
-        <div>{ScrollToTop()}</div>
+        {ScrollToTop()}
 
         {/* mv */}
         <div className='mv'>
@@ -205,8 +202,8 @@ const App = () => {
             <h2 className='title'>Contact</h2>
             <p className='lead'>
               ご意見、ご感想、ご依頼など、お気軽にご連絡頂ければ幸いです。心よりお待ちしております。<br/>
-              keiichi_washino@mforce.co.jp<br/>
-              080-7376-2287
+              k.washino1996born@gmail.com<br/>
+              090-5601-4738
             </p>
           </div>
         </section>
